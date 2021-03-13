@@ -9,9 +9,7 @@ class HomeController extends BaseController
 		$data = [
 			'title' => 'Página de Prueba',
 		];
+		echo view('HomeView',$data);
 
-		echo view('includes/header',$data);
-		echo view('HomeView');
-		echo view('includes/footer');
 	}
 }
