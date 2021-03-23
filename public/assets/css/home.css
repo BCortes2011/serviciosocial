@@ -1,3 +1,25 @@
+#mainSection{
+    width: 100vw;
+}
+body { 
+    padding-top: 56px;
+    background: rgb(252, 221, 164);
+}
+.panel-1{
+    background: rgb(252, 235, 201);
+}
+.panel-2{
+    background: rgb(250, 230, 192);
+    height: 100%;
+}
+.panel-right{
+    padding-top: 10px;
+    padding-right: 0px;
+}
+.panel-footer{
+    background: #57A519;
+    width: 100%;
+}
 .dropdown-submenu{
     position: relative;
 }
@@ -13,19 +35,22 @@
     position: absolute !important;
     margin-top: -30px;
     left: 100%;
+    background-color: #dce9d2;
 }
 .dropdown-divider{
     border-color: rgb(59, 58, 59);
 }
-.navbar-nav > li > .dropdown-menu {     
-    background-color: #dce9d2;  
+.navbar-nav > li > .dropdown-menu{     
+    background-color: #dce9d2;
+    width: auto;
 }
 @media (max-width: 992px) {
     .dropdown-menu{
-        width: 50%;
-    }
-    .dropdown-menu .dropdown-submenu{
         width: auto;
+    }
+    .dropdown-menu .dropdown-submenu, .dropdown-menu > .dropdown-submenu > .dropdown-menu{
+        width: auto;
+        background-color: #dce9d2;
     }
 }
 .bg-navbar{
@@ -37,4 +62,26 @@
     background: purple(32, 34, 34);
     border: 2px slategrey solid;
     border-radius: 0.5rem;
+}
+.banner-superior{
+    background-image: url("../imgs/banners/banner-logo-ingbio.png");
+    height: 250px;
+    background-size: cover;
+}
+.my-slider .carousel-indicators {
+    top: 10px;
+    justify-content: left; 
+    /* margin:5px; */
+    padding-left: 5px;
+    padding-right:15px;
+  }
+  
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.carousel-indicators li:not(:last-child) {
+margin-right: 20px;
 }

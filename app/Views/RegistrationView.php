@@ -5,7 +5,7 @@
 </div>
 
 <h1 class="text-center my-4">Registrar Usuario</h1>
-<form class="panel-1 px-5 mx-4 needs-validation" action="/Registration/register" method="post" novalidate>
+<form class="panel-1 px-5 mx-4" action="/Registration/register" method="post">
     <div class="form-row">
         <div class="form-group col-md-4">
             <label for="inputEmail"><b>Correo Electrónico</b></label>

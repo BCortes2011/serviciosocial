@@ -23,42 +23,10 @@ class Registration extends Controller
 	public function register(){
 		$userModel = new UserModel();
 		$modelCategories = new CategoriesModel();
-
-		$data['categories'] = $modelCategories->findAll();
-
 		helper("url", "form");
-
 		$data = [
 			'title' => 'Crear Cuenta',
 			'categories' => $modelCategories->findAll()
 		];
-
-		if ($this->request->getMethod() === 'post' && $this->validate([
-			'inputEmail' => 'required',
-			'inputConfirmEmail' => 'required',
-			'inputPassword'  => 'required',
-			'inputName'  => 'required',
-			'inputLastName' => 'required',
-			'inputPhone'  => 'required',
-			'inputCategory' => 'required'
-		])) {
-
-			$userModel->save([
-				'email' => $this->request->getPost('inputEmail'),
-				'password' => $this->request->getPost('inputPassword'),
-				'name' => $this->request->getPost('inputName'),
-				'lastName' => $this->request->getPost('inputLastName'),
-				'phoneNumber' => $this->request->getPost('inputPhone'),
-				'category_id' => $this->request->getPost('inputCategory')
-			]);
-
-			echo view('includes/header', $data);
-			echo view('RegistrationView');
-			echo view('includes/footer');
-		} else {
-			echo view('includes/header', $data);
-			echo view('RegistrationView');
-			echo view('includes/footer');
-		}
 	}
 }

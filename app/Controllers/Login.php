@@ -2,16 +2,17 @@
 
 namespace App\Controllers;
 
-class HomeController extends BaseController
+class Login extends BaseController
 {
 	public function index(){
 
 		$data = [
-			'title' => 'Página de Prueba',
+			'title' => 'Iniciar Sesión',
 		];
 
 		echo view('includes/header', $data);
-		echo view('HomeView');
+		echo view('LoginView');
 		echo view('includes/footer');
+
 	}
 }
