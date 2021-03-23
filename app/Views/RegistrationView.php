@@ -5,7 +5,7 @@
 </div>
 
 <h1 class="text-center my-4">Registrar Usuario</h1>
-<form class="panel-1 px-5 mx-4" action="/Registration/register" method="post" novalidate>
+<form class="panel-1 px-5 mx-4" action="/Registration/register" method="post" validate>
     <div class="form-row">
         <div class="form-group col-md-4">
             <label for="inputEmail"><b>Correo Electrónico</b></label>
@@ -20,7 +20,7 @@
         </div>
         <div class="form-group col-md-4">
             <label for="inputPassword"><b>Contraseña:</b></label>
-            <input type="password" class="form-control <?php if(\Config\Services::validation()->hasError('inputPassword')){echo 'is-invalid';} ?>" name="inputPassword">
+            <input type="password" minlength="8" oninvalid="this.setCustomValidity('La Contraseña debe de contener al menos 8 caracteres.')" oninput="this.setCustomValidity('')" class="form-control <?php if(\Config\Services::validation()->hasError('inputPassword')){echo 'is-invalid';} ?>" name="inputPassword">
             <?= \Config\Services::validation()->showError('inputPassword','my_error_list');?>
         </div>
     </div>
@@ -37,29 +37,26 @@
         </div>
         <div class="form-group col-md-4">
             <label for="inputPhone"><b>Teléfono:</b></label>
-            <input type="text" class="form-control <?php if(\Config\Services::validation()->hasError('inputPhone')){echo 'is-invalid';} ?>" name="inputPhone" placeholder="Número Telefónico con LADA...">
+            <input type="tel" minlength="10" oninvalid="this.setCustomValidity('El teléfono debe de contener mínimo 10 caracteres')" class="form-control <?php if(\Config\Services::validation()->hasError('inputPhone')){echo 'is-invalid';} ?>" name="inputPhone" placeholder="Número Telefónico con LADA...">
             <?= \Config\Services::validation()->showError('inputPhone','my_error_list');?>
         </div>
-        <label for="inputCategory""><b>Tipo de Usuario:</b></label>
-        <select name="inputCategory" class="form-group mx-2 <?php if(\Config\Services::validation()->hasError('inputCategory')){echo 'is-invalid';} ?>">
-            <?php
-            foreach ($categories as $c) {
-                echo "<option value='" . $c['category_id'] . "'>" . $c['name'] . "</option>";
-            }
-            ?>
-        </select>
+        
 
-        <div class="input-group mb-3 ">
+        <div class="input-group col-sm-3">
             <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                <label class="input-group-text" for="inputCategory">Tipo De Usuario</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="form-groud custom-select <?php if(\Config\Services::validation()->hasError('inputCategory')){echo 'is-invalid';} ?>" name="inputCategory">
                 <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <?php
+                    foreach ($categories as $c) {
+                        echo "<option value='" . $c['category_id'] . "'>" . $c['name'] . "</option>";
+                    }
+                ?>
             </select>
+            <?= \Config\Services::validation()->showError('inputCategory','my_error_list');?>
         </div>
+        
     </div>
     <div class="row mx-auto">
         <div class="cotnainer-fluid mx-auto">

@@ -42,7 +42,8 @@ class Registration extends Controller
 					"errors" => [
 						"required" => "El campo {field} es obligatorio. Por favor escribe tu {field}.",
 						"valid_email" => "La dirección de {field} ingresada no es válida.",
-						"max_length" => "El campo de {field} no puede exceder de 100 caracteres."
+						"max_length" => "El campo de {field} no puede exceder de 100 caracteres.",
+						"is_unique" => "Este {field} ya está registrado. Favor de ingresar un {field} distinto."
 					]
 				],
 				"inputConfirmEmail" => [
@@ -89,9 +90,9 @@ class Registration extends Controller
 				],
 				"inputCategory" => [
 					"label" => "Tipo de Usuario",
-					"rules" => "required",
+					"rules" => "required|in_list[1,2,3]",
 					"errors" => [
-						"required" => "Favor de escoger cuál es su tipo de usuario.",
+						"required" => "Favor de escoger cuál es su tipo de usuario."
 					]
 				]
 			]);
@@ -102,6 +103,18 @@ class Registration extends Controller
 				echo view('includes/footer');
 			} else {
 				echo "Success";
+				echo print_r($_POST);
+				$userData = [
+					"email" => $_POST['inputEmail'],
+					"password" => $_POST['inputPassword'],
+					"name" => $_POST['inputName'],
+					"lastName" => $_POST['inputLastName'],
+					"phoneNumber" => $_POST['inputPhone'],
+					"category_id" => $_POST['inputCategory'],
+					"registration_date" => date('Y-m-d H:i:s')
+				];
+
+				$userModel->insert($userData);
 			}
 		}
 	}
