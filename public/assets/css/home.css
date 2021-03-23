@@ -68,6 +68,11 @@ body {
     height: 250px;
     background-size: cover;
 }
+.error-message{
+    color: rgb(236, 42, 42);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
 .my-slider .carousel-indicators {
     top: 10px;
     justify-content: left; 
@@ -85,3 +90,4 @@ body {
 .carousel-indicators li:not(:last-child) {
 margin-right: 20px;
 }
+.has-
