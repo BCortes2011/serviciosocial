@@ -31,7 +31,8 @@ class Registration extends Controller
 			$validation = \Config\Services::validation();
 			$data = [
 				'title' => 'Crear Cuenta',
-				'categories' => $modelCategories->findAll()
+				'categories' => $modelCategories->findAll(),
+				'validation' => \Config\Services::validation()
 			];
 
 			$validation->setRules([
@@ -95,14 +96,10 @@ class Registration extends Controller
 				]
 			]);
 
-
-
 			if (!$validation->withRequest($this->request)->run()) {
-				echo "error<br>";
-				$errors = $validation->getErrors();
-				foreach ($errors as $e) {
-					echo nl2br($e . "\n");
-				}
+				echo view('includes/header', $data);
+				echo view('RegistrationView', ['validation' => $this->validator]);
+				echo view('includes/footer');
 			} else {
 				echo "Success";
 			}
