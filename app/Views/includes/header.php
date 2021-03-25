@@ -100,10 +100,10 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                            <a class="nav-link" href="/Login">Iniciar Sesión <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/Users">Iniciar Sesión <span class="sr-only">(current)</span></a>
                         </li>    
                     <li class="nav-item">
-                        <a class="nav-link" href="/Registration">Crear Cuenta <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/Users/register">Crear Cuenta <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>

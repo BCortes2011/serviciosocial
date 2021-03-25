@@ -40,7 +40,7 @@ class Login extends BaseController
 			if (!$validation->withRequest($this->request)->run()) {
 				$data['validation'] = $validation;
 			} else {
-				$userModel = new UserModel();
+				echo print_r($session);
 			}
 		}else{
 			echo "No POST";

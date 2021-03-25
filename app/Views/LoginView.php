@@ -7,7 +7,7 @@
         <!-- Panel Central-->
         <div class="container-fluid text-center pt-3 pb-4">
             <h1>Iniciar Sesión</h1>
-            <form name="loginForm" action="/Login/startSession" method="post">
+            <form name="loginForm" action="/Users" method="post">
                 <div class="form-group">
                     <label for="email">Correo Electrónico:</label>
                     <input id="inputEmail" type="email" class="form-control" placeholder="ejemplo@ejemplo.com" name="inputEmail" required>
@@ -16,6 +16,14 @@
                     <label for="inputPassword">Contraseña:</label>
                     <input id="inputPassword" type="password" minlength="10" class="form-control" name="inputPassword" required>
                 </div>
+
+                <?php if (isset($validation)) : ?>
+                    <div class="col-12">
+                        <div class="alert alert-danger" role="alert">
+                            <?= $validation->listErrors() ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
                 <button type="submit" class="btn btn-success">Iniciar Sesión</button>
             </form>
         </div>
@@ -28,12 +36,12 @@
         for (var i = 0; i < elements.length; i++) {
             elements[i].oninvalid = function(e) {
                 e.target.setCustomValidity("");
-                if(e.target.name=='inputEmail'){
+                if (e.target.name == 'inputEmail') {
                     if (!e.target.validity.valid) {
                         e.target.setCustomValidity("Ingrese un Correo Electrónico.");
                     }
                 }
-                if(e.target.name=='inputPassword'){
+                if (e.target.name == 'inputPassword') {
                     if (!e.target.validity.valid) {
                         e.target.setCustomValidity("Ingrese la contraseña");
                     }
