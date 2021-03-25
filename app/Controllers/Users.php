@@ -38,12 +38,17 @@ class Users extends BaseController
 
 				$this->setUserSession($user);
 				//$session->setFlashdata('success', 'Successful Registration');
+                echo view('includes/header', $data);
+                echo view('ProfileView');
+                echo view('includes/footer');
 
 			}
-		}
-		echo view('includes/header', $data);
-		echo view('LoginView');
-		echo view('includes/footer');
+		}else{
+            echo view('includes/header', $data);
+            echo view('LoginView');
+            echo view('includes/footer');
+        }
+		
 	}
 
 	private function setUserSession($user){
@@ -155,13 +160,18 @@ class Users extends BaseController
                 $model->save($userData);
 				$session = session();
 				$session->setFlashdata('success', 'Successful Registration');
+                echo view('includes/header', $data);
+                echo view('RegistrationSuccessView');
+                echo view('includes/footer');
 			}
-		}
+		}else{
+            echo view('includes/header', $data);
+            echo view('registrationView');
+            echo view('includes/footer');
+        }
 
 
-		echo view('includes/header', $data);
-		echo view('registrationView');
-		echo view('includes/footer');
+
 	}
 
 	public function profile(){
