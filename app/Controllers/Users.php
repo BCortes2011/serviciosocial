@@ -105,6 +105,13 @@ class Users extends BaseController
 						"alpha_numeric_punct" => "El campo {field} solo puede contener números, letras y los símbolos !#~$%&*-_+=|:."
 					]
 				],
+				"inputConfirmPassword" => [
+					"label" => "Confirmar Contraseña",
+					"rules" => "matches[inputPassword]",
+					"errors" => [
+						"matches" => "Las contraseñas no son iguales. Favor de revisarlas."
+					]
+				],
 				"inputName" => [
 					"label" => "Nombre(s)",
 					"rules" => "required|min_length[3]|max_length[45]",

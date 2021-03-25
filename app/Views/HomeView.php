@@ -23,6 +23,9 @@
         </div>
     </div>
     <div class="col-sm-3 panel-right  text-center"> <!-- Panel Derecho-->
+        <div class="container-fluid mb-2">
+            <h3 class="mb-4">Avisos</h3>
+        </div>
         <div id="carouselExampleIndicators" class=" my-slider carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

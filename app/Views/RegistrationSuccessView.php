@@ -6,5 +6,5 @@
 
 <div class="row" id="mainSection">
     <h1>SUCCESS!</h1>
-    <p><?= anchor('/Users', 'Try it again!') ?></p>
+    
 </div>

@@ -3,7 +3,7 @@
 </div>
 
 <div class="row" id="mainSection">
-    <div class="col-sm-3 panel-1 mx-auto">
+    <div class="col-lg-3 panel-1 mx-auto">
         <!-- Panel Central-->
         <div class="container-fluid text-center pt-3 pb-4">
             <h1>Iniciar Sesión</h1>
