@@ -1,9 +1,10 @@
 #mainSection{
-    width: 100vw;
+    width: 100%;
 }
 body { 
     padding-top: 56px;
     background: rgb(252, 221, 164);
+    font-family: "Verdana", Verdana, sans-serif;
 }
 .panel-1{
     background: rgb(252, 235, 201);
@@ -15,6 +16,9 @@ body {
 .panel-right{
     padding-top: 10px;
     padding-right: 0px;
+    background: cornflowerblue;
+    justify-content: left;
+    display: flex;
 }
 .panel-footer{
     background: #57A519;
@@ -88,4 +92,8 @@ body {
 }
 .carousel-indicators li:not(:last-child) {
 margin-right: 20px;
+}
+.menu-panel-derecho li{
+    color: chocolate;
+    list-style-type: none;
 }
