@@ -13,7 +13,11 @@
                     <div class="container w-75 mx-5">
                         <h1 class="pb-4">Objetivos Generales</h1>
                         <p>BBBBLorem ipsum dolor sit amet consectetur, adipisicing elit. Illo impedit pariatur magnam deserunt omnis eligendi quia consectetur corrupti sunt aliquam, harum nihil reiciendis, excepturi cumque, quae eum facilis voluptatem repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos autem ipsum, perferendis deleniti magni laudantium quod quibusdam quis eligendi. In totam fuga enim commodi rem eaque odit harum, nobis fugit.</p>
+<<<<<<< HEAD
                         <p>joibkjhbkjhkhk</p>
+=======
+                        <p>No te pinches duermas</p>
+>>>>>>> 6027762593bacccaa19d5dd8dd05596273f10253
                     </div>
                 </div>
                 <div class="container-fluid px-5 mx-0">
