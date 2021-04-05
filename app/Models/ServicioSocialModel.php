@@ -16,7 +16,6 @@ class ServicioSocialModel extends Model
     protected function beforeInsert(array $data)
     {
         $data['data']['fecha_de_publicacion'] = date('Y-m-d');
-
         return $data;
     }
 

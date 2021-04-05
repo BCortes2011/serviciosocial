@@ -24,7 +24,7 @@
     <body>
     <!-- Comienza la barra de navegación -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-navbar ">
-            <a class="navbar-brand" href="#">Lic. IngBio</a>
+            <a class="navbar-brand" href="/Test">Lic. IngBio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,7 +40,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Proyectos Terminales</a>
-                        <a class="dropdown-item" href="#">Proyectos de Servicio Social</a>
+                        <a class="dropdown-item" href="/ServicioSocial">Proyectos de Servicio Social</a>
                         <a class="dropdown-item" href="#">Prácticas Profesionales</a>
                         <a class="dropdown-item" href="#">Prácticas Hospitalarias</a>
                         </div>
