@@ -23,7 +23,7 @@
                 <?php foreach ($info as $item): ?>
                     <tr class="entrada-tabla-proyecto">
                     
-                        <td><a href="/ServicioSocial/info_proyecto/<?= $item['proyecto_servicio_id'] ?>" > <b><?= esc($item['titulo_proyecto']); ?></a></b></td>
+                        <td><a href="/ServicioSocial/info_proyecto/<?= $item['proyecto_servicio_id'] ?>/<?= $item['area_id'] ?>" > <b><?= esc($item['titulo_proyecto']); ?></a></b></td>
 
                         <?php foreach ($profesores as $prof): ?>
                             <td><b><?= esc($prof['nombres'].' '.$prof['apellidos']); ?></b></td>
