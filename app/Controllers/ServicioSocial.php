@@ -34,7 +34,7 @@ class ServicioSocial extends BaseController
 		$data = [
 			'title' => 'Índice de Proyectos de Servicio Social',
 			'info' => $modelServicio->findAll(),
-			'profesor' => $query->getResult('array'),
+			'profesores' => $query->getResult('array'),
 			'area' => $query2->getResult('array')
 		];
 

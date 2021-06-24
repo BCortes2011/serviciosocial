@@ -30,6 +30,9 @@ class Users extends BaseController
 
 			if (! $this->validate($rules, $errors)) {
 				$data['validation'] = $this->validator;
+				echo view('includes/header', $data);
+                echo "error - Users.php/index";
+                echo view('includes/footer');
 			}else{
 				$model = new UserModel();
 
