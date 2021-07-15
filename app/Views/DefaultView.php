@@ -5,10 +5,10 @@
 </div>
 
 <div class="row" id="mainSection">
-    <div class="col-sm-9 panel-1"> <!-- Panel Central-->
+    <div class="col-sm-6 panel-1"> <!-- Panel Central-->
         
     </div>
-    <div class="col-sm-3 panel-right  text-center"> <!-- Panel Derecho-->
+    <div class="col-sm-6 panel-right  text-center"> <!-- Panel Derecho-->
         
     </div>
 </div>

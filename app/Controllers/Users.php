@@ -8,7 +8,6 @@ class Users extends BaseController
 {
 	public function index()
 	{
-
         $session = \Config\Services::session();
 		$data = [
             'title' => 'Iniciar Sesión'
@@ -28,23 +27,20 @@ class Users extends BaseController
 					'validateUser' => 'Email or Password don\'t match\n'				]
 			];
 
-			if (! $this->validate($rules, $errors)) {
+			if (!$this->validate($rules, $errors)) {
 				$data['validation'] = $this->validator;
 				echo view('includes/header', $data);
                 echo "error - Users.php/index";
+				var_dump($data['validation']);
                 echo view('includes/footer');
 			}else{
 				$model = new UserModel();
-
-				$user = $model->where('email', $this->request->getVar('inputEmail'))
-											->first();
-
+				$user = $model->where('email', $this->request->getVar('inputEmail'))->first();
 				$this->setUserSession($user);
 				//$session->setFlashdata('success', 'Successful Registration');
                 echo view('includes/header', $data);
                 echo view('ProfileView');
                 echo view('includes/footer');
-
 			}
 		}else{
             echo view('includes/header', $data);

@@ -39,10 +39,10 @@
                         Archivo de Proyectos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Proyectos Terminales</a>
+                        <a class="dropdown-item" href="/ProyectoTerminal">Proyectos Terminales</a>
                         <a class="dropdown-item" href="/ServicioSocial">Proyectos de Servicio Social</a>
                         <a class="dropdown-item" href="#">Prácticas Profesionales</a>
-                        <a class="dropdown-item" href="#">Prácticas Hospitalarias</a>
+                        <a class="dropdown-item" href="/PracticaHospitalaria">Prácticas Hospitalarias</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
