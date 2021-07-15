@@ -7,7 +7,7 @@ class HomeController extends BaseController
 	public function index(){
 
 		$data = [
-			'title' => 'Página de Prueba',
+			'title' => 'Página de Prueba 2',
 		];
 
 		echo view('includes/header', $data);

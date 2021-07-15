@@ -1,31 +1,29 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\ServicioSocialModel;
 use App\Models\ProfesorModel;
+use App\Models\ProyectoTerminalModel;
 
-class ServicioSocial extends BaseController
+class ProyectoTerminal extends BaseController
 {
 	public function index()
 	{
-
-
-		$modelServicio = new ServicioSocialModel();
+		$modelProyecto = new ProyectoTerminalModel();
 		$modelProfesor = new ProfesorModel();
 		$data = [
-			'title' => 'Índice de Proyectos de Servicio Social',
-			'info' => $modelServicio->findAll(),
+			'title' => 'Índice de Proyectos Terminales',
+			'info' => $modelProyecto->findAll(),
 			'profesores' => $modelProfesor->findAll()
 		];
 
 		echo view('includes/header', $data);
-		echo view('ProyectosServicioSocialView', $data);
+		echo view('ProyectosTerminalesView', $data);
 		echo view('includes/footer');
 	}
 
 	public function info_proyecto($id, $area_id){
 
-		$modelServicio = new ServicioSocialModel();
+		$modelProyecto = new ProyectoTerminalModel();
 
 		$db = \Config\Database::connect();
 		$query = $db->query('SELECT * FROM profesores_encargados WHERE profesor_id = '.$id);
@@ -33,7 +31,7 @@ class ServicioSocial extends BaseController
 
 		$data = [
 			'title' => 'Índice de Proyectos de Servicio Social',
-			'info' => $modelServicio->findAll(),
+			'info' => $modelProyecto->findAll(),
 			'profesores' => $query->getResult('array'),
 			'area' => $query2->getResult('array')
 		];

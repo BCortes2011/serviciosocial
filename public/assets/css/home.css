@@ -1,5 +1,6 @@
 #mainSection{
     width: 100%;
+    margin-right: auto;
 }
 body { 
     padding-top: 56px;
@@ -10,7 +11,7 @@ body {
     background: rgb(252, 235, 201);
 }
 .panel-2{
-    background: rgb(250, 230, 192);
+    background: rgb(252, 235, 201);
     height: 100%;
 }
 .panel-right{

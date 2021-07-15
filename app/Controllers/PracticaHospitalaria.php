@@ -1,39 +1,34 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\ServicioSocialModel;
-use App\Models\ProfesorModel;
+use App\Models\PracticaHospitalariaModel;
 
-class ServicioSocial extends BaseController
+class PracticaHospitalaria extends BaseController
 {
 	public function index()
 	{
-
-
-		$modelServicio = new ServicioSocialModel();
-		$modelProfesor = new ProfesorModel();
+		$modelPractica = new PracticaHospitalariaModel();
 		$data = [
-			'title' => 'Índice de Proyectos de Servicio Social',
-			'info' => $modelServicio->findAll(),
-			'profesores' => $modelProfesor->findAll()
+			'title' => 'Índice de Proyectos Terminales',
+			'info' => $modelPractica->findAll(),
 		];
 
 		echo view('includes/header', $data);
-		echo view('ProyectosServicioSocialView', $data);
+		echo view('PracticasHospitalariasView', $data);
 		echo view('includes/footer');
 	}
 
 	public function info_proyecto($id, $area_id){
 
-		$modelServicio = new ServicioSocialModel();
+		$modelPractica = new PracticaHospitalariaModel();
 
 		$db = \Config\Database::connect();
 		$query = $db->query('SELECT * FROM profesores_encargados WHERE profesor_id = '.$id);
 		$query2 = $db->query('SELECT * FROM areas_de_interes WHERE area_id = '.$area_id);
 
 		$data = [
-			'title' => 'Índice de Proyectos de Servicio Social',
-			'info' => $modelServicio->findAll(),
+			'title' => 'Índice de Prácticas Hospitalarias',
+			'info' => $modelPractica->findAll(),
 			'profesores' => $query->getResult('array'),
 			'area' => $query2->getResult('array')
 		];
