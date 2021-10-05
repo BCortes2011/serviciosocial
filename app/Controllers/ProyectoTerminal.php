@@ -30,14 +30,14 @@ class ProyectoTerminal extends BaseController
 		$query2 = $db->query('SELECT * FROM areas_de_interes WHERE area_id = '.$area_id);
 
 		$data = [
-			'title' => 'Índice de Proyectos de Servicio Social',
+			'title' => 'Índice de Proyectos Terminales',
 			'info' => $modelProyecto->findAll(),
 			'profesores' => $query->getResult('array'),
 			'area' => $query2->getResult('array')
 		];
 
 		echo view('includes/header', $data);
-		echo  view('InfoProyectoServicioSocialView', $data);
+		echo  view('InfoProyectoTerminalView', $data);
 		echo view('includes/footer');
 	}
 }

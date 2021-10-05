@@ -51,10 +51,10 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li>
-                                <a class="dropdown-item" href="#">Plan de Estudios</a>
+                                <a class="dropdown-item" target="_blank" href="http://www.uam.mx/licenciaturas/pdfs/22_10_Licenciatura_en_Ingenieria_Biomedica_IZT.pdf">Plan de Estudios</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Boligrama</a>
+                                <a class="dropdown-item" target="_blank" href="https://docs.google.com/viewerng/viewer?url=https://cbi.izt.uam.mx/coddaa/images/licenciaturas/mapas/Biomedica.pdf">Boligrama</a>
                             </li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Guías para Alumnos</a>
@@ -78,24 +78,11 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Directorio</a>
-                            <a class="dropdown-item" href="#">Lista de Egresados</a>                
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Colaboraciones y Convenios</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Bolsa de Trabajo
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Hospitales</a>
-                            <a class="dropdown-item" href="#">Empresas</a>                
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Bolsa de Trabajo de la OCC</a>
-                        </div>
-                    </li>
+                
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Galeria</a>
+                        <a class="nav-link" href="/Cuestionario">Cuestionario</a>
                     </li>
                     
                 </ul>

@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\ServicioSocialModel;
+use App\Models\AreasModel;
 
 class Test extends BaseController
 {
@@ -10,10 +11,13 @@ class Test extends BaseController
 
 
 		$modelServicio = new ServicioSocialModel();
+		$modelArea = new AreasModel();
 		$data = [
 			'title' => 'Prueba!',
-			'view' => 'ProyectosServicioSocialView',
-			'info' => $modelServicio->findAll()		
+			'view' => 'CuestionarioView',
+			'info' => $modelServicio->findAll(),
+			'areas' => $modelArea->findAll()
+			
 		];
 
 		echo view('includes/header', $data);
