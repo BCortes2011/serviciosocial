@@ -5,8 +5,8 @@
 <div class="container-fluid text-center my-3">
     <h1>Archivo de Prácticas Hospitalarias</h1>
 </div>
-<div class="row pl-5 mx-0" id="mainSection">
-    <div class="col-md-9 panel-1 table-responsive ">
+<div class="row px-5 mx-0" id="mainSection">
+    <div class="col-md-12 panel-1 table-responsive ">
         <!-- Panel Central-->
         <table class="table table-striped table-bordered table-hover text-center">
             <thead class="thead-dark">
@@ -16,55 +16,25 @@
                     <th scope="col">Contacto</th>
                     <th scope="col">Fecha de Publicación</th>
                     <th scope="col">Tipo de Hospital</th>
-                    <th scope="col">Área de Interés</th>
+                    <th scope="col">Alcaldía</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td scope="row">Proyecto Terminal 1</td>
-                    <td>Profesor 1, Profesor 2</td>
-                    <td>UAM Iztapalapa</td>
-                    <td>26/03/2021</td>
-                    <td>En proceso</td>
-                    <td>Área 1</td>
-                </tr>
-                <tr>
-                    <td scope="row">Proyecto Terminal 2</td>
-                    <td>Profesor 1, Profesor 2</td>
-                    <td>UAM Iztapalapa</td>
-                    <td>26/03/2021</td>
-                    <td>Terminado</td>
-                    <td>Área 2</td>
-                </tr>
-                <tr>
-                    <td scope="row">Proyecto Terminal 3</td>
-                    <td>Profesor 1, Profesor 2</td>
-                    <td>UAM Iztapalapa</td>
-                    <td>26/03/2021</td>
-                    <td>Terminado</td>
-                    <td>Área 3</td>
-                </tr>
+            <?php 
+            foreach ($info as $item):
+            
+            ?>
+                    <tr class="entrada-tabla-proyecto">
+                    
+                        <td><a href="/PracticaHospitalaria/info_proyecto/<?= $item['practica_hospitalaria_id'] ?>/<?= $item['alcaldia_id'] ?>" > <b><?= esc($item['nombre_hospital']); ?></a></b></td>            
+                        <td><b><?= esc($item['lugar_de_realización']); ?></b></td>
+                        <td><b><?= esc($item['contacto_nombre']); ?></b></td>
+                        <td><b><?= esc($item['fecha_de_publicacion']); ?></b></td>
+                        <td><b><?= esc($item['estado']); ?></b></td>
+                        <td><b><?= esc($item['alcaldia_id']); ?></b></td>
+                    </tr>
+                <?php endforeach; ?>
             </tbody>
         </table>
-    </div>
-    <div class="col-sm-2 panel-right text-center mx-auto">
-        <!-- Panel Derecho-->
-        <ul class="menu-panel-derecho">
-            <li>
-                <p>Menu</p>
-            </li>
-            <li>
-                <p>Link 1</p>
-            </li>
-            <li>
-                <p>Link 2</p>
-            </li>
-            <li>
-                <p>Link 3</p>
-            </li>
-            <li>
-                <p>Link 4</p>
-            </li>
-        </ul>
     </div>
 </div>

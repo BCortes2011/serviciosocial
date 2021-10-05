@@ -18,13 +18,13 @@ class PracticaHospitalaria extends BaseController
 		echo view('includes/footer');
 	}
 
-	public function info_proyecto($id, $area_id){
+	public function info_proyecto($id, $alcaldia_id){
 
 		$modelPractica = new PracticaHospitalariaModel();
 
 		$db = \Config\Database::connect();
 		$query = $db->query('SELECT * FROM profesores_encargados WHERE profesor_id = '.$id);
-		$query2 = $db->query('SELECT * FROM areas_de_interes WHERE area_id = '.$area_id);
+		$query2 = $db->query('SELECT * FROM alcaldias WHERE alcaldia_id = '.$alcaldia_id);
 
 		$data = [
 			'title' => 'Índice de Prácticas Hospitalarias',

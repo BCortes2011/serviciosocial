@@ -3,6 +3,7 @@
 namespace App\Controllers;
 use App\Models\ServicioSocialModel;
 use App\Models\ProfesorModel;
+use App\Models\AreasModel;
 
 class ServicioSocial extends BaseController
 {
@@ -40,6 +41,18 @@ class ServicioSocial extends BaseController
 
 		echo view('includes/header', $data);
 		echo  view('InfoProyectoServicioSocialView', $data);
+		echo view('includes/footer');
+	}
+
+	public function registrarProyecto(){
+		$modelAreas = new AreasModel();
+		$data = [
+			'title' => 'Índice de Proyectos de Servicio Social',
+			'area' => $modelAreas->findAll()
+		];
+
+		echo view('includes/header', $data);
+		echo view("RegistroProyectoServicioSocial");
 		echo view('includes/footer');
 	}
 }

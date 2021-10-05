@@ -66,7 +66,6 @@ class Users extends BaseController
 	}
 
 	public function register(){
-		$data = [];
 		helper(['form']);
         $modelCategories = new CategoriesModel();
 
@@ -174,10 +173,7 @@ class Users extends BaseController
             echo view('includes/header', $data);
             echo view('registrationView');
             echo view('includes/footer');
-        }
-
-
-
+		}
 	}
 
 	public function profile(){
