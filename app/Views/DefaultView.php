@@ -6,6 +6,8 @@
 
 <div class="row" id="mainSection">
     <div class="col-sm-6 panel-1"> <!-- Panel Central-->
+    <p>kkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    </p>
         
     </div>
     <div class="col-sm-6 panel-right  text-center"> <!-- Panel Derecho-->
