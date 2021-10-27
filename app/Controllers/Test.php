@@ -14,7 +14,7 @@ class Test extends BaseController
 		$modelArea = new AreasModel();
 		$data = [
 			'title' => 'Prueba!',
-			'view' => 'CuestionarioView',
+			'view' => 'AgregarProyectoServicioSocialView',
 			'info' => $modelServicio->findAll(),
 			'areas' => $modelArea->findAll()
 			
