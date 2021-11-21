@@ -12,7 +12,10 @@
                 <div class="jumbotron jumbotron-fluid py-4 px-0">
                     <div class="container w-75 mx-5">
                         <h1 class="pb-4">Objetivos Generales</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo impedit pariatur magnam deserunt omnis eligendi quia consectetur corrupti sunt aliquam, harum nihil reiciendis, excepturi cumque, quae eum facilis voluptatem repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos autem ipsum, perferendis deleniti magni laudantium quod quibusdam quis eligendi. In totam fuga enim commodi rem eaque odit harum, nobis fugit.</p>
+                        <p>Formar ingenieros con una sólida base científica, humanística y técnica, capaces de aplicar conocimientos, técnicas y herramientas de las
+                            matemáticas, las ciencias, la computación y la ingeniería con la finalidad de diseñar, desarrollar, aplicar y optimizar tecnologías enfocadas a la
+                            resolución de los problemas interdisciplinarios de la ingeniería y la medicina, así como del uso y aprovechamiento de la tecnología propia de los
+                            sistemas de atención a la salud.</p>
                     </div>
                 </div>
                 <div class="container-fluid px-5 mx-0">

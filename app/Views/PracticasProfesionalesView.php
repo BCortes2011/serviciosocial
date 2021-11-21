@@ -25,7 +25,7 @@
             foreach ($info as $item): ?>
                     <tr class="entrada-tabla-proyecto">
                     
-                        <td><a href="/ProyectoTerminal/info_proyecto/<?= $item['proyecto_terminal_id'] ?>/<?= $item['area_id'] ?>" > <b><?= esc($item['titulo_proyecto']); ?></a></b></td>
+                        <td><a href="/ProyectoTerminal/info_proyecto/<?= $item['practica_profesional_id'] ?>/<?= $item['area_de_interes'] ?>" > <b><?= esc($item['nombre']); ?></a></b></td>
 
                         <?php foreach ($profesores as $prof): ?>
                             <td><b><?= esc($prof['nombres'].' '.$prof['apellidos']); ?></b></td>

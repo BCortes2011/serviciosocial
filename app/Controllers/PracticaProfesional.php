@@ -5,7 +5,7 @@ use App\Models\PracticaProfesionalModel;
 use App\Models\ProfesorModel;
 use App\Models\AreasModel;
 
-class PracticasProfesionales extends BaseController
+class PracticaProfesional extends BaseController
 {
 	public function index()
 	{
@@ -26,7 +26,7 @@ class PracticasProfesionales extends BaseController
 
 	public function info_proyecto($id, $area_id){
 
-		$modelServicio = new ServicioSocialModel();
+		$modelServicio = new PracticaProfesionalModel();
 
 		$db = \Config\Database::connect();
 		$query = $db->query('SELECT * FROM profesores_encargados WHERE profesor_id = '.$id);
