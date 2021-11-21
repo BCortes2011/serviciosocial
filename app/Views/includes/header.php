@@ -72,7 +72,11 @@
                                 <a class="dropdown-item" href="#">Solicitud de Evaluación Especial</a>
                                 <a class="dropdown-item" href="#">Solicitud de Evaluación en Quinta Oportunidad</a>
                             </ul>
+<<<<<<< HEAD
                     </li>
+=======
+                     </li>
+>>>>>>> 0c8695b (uno)
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Contactos

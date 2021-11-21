@@ -124,4 +124,7 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
+<<<<<<< HEAD
 vendor/
+=======
+>>>>>>> 0c8695b (uno)
