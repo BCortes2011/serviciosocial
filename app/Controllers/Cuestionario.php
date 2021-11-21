@@ -185,4 +185,17 @@ class Cuestionario extends BaseController
 		echo view("Cuestionario_proyecto_informacion", $data);
 		echo view('includes/footer');
 	}
+
+	public function confirmarProyecto(){
+
+		$this -> load -> library('email');
+		
+		$data = [
+			'title' => "Test"	
+		];
+
+		echo view('includes/header', $data);
+		var_dump($_POST);
+		echo view('includes/footer');
+	}
 }
