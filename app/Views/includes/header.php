@@ -58,7 +58,7 @@
                             </li>
                             
                             <li>
-                                <a class="dropdown-item" href="#">Perfil de Ingreso/Egreso SADAS</a>
+                                <a class="dropdown-item" href="#">Perfil de Ingreso/Egreso</a>
                             </li>
                         </ul>
                     </li>
