@@ -24,7 +24,7 @@
     <body>
     <!-- Comienza la barra de navegación -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-navbar ">
-            <a class="navbar-brand" href="/Test">Lic. IngBio</a>
+            <a class="navbar-brand" href="/Test">UAMI</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,22 +56,23 @@
                             <li>
                                 <a class="dropdown-item" target="_blank" href="https://docs.google.com/viewerng/viewer?url=https://cbi.izt.uam.mx/coddaa/images/licenciaturas/mapas/Biomedica.pdf">Boligrama</a>
                             </li>
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Guías para Alumnos</a>
-                                <ul class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Trámites de Servicio Social</a>
-                                    <a class="dropdown-item" href="#">Proceso para realizar Prácticas Profesionales</a>
-                                    <a class="dropdown-item" href="#">Autorización de UEAs Optativas o Exámenes de Recuperación</a>
-                                    <a class="dropdown-item" href="#">Lineamientos de Movilidad</a>
-                                    <a class="dropdown-item" href="#">Solicitud de Evaluación Especial</a>
-                                    <a class="dropdown-item" href="#">Solicitud de Evaluación en Quinta Oportunidad</a>
-                                </ul>
-                            </li>
+                            
                             <li>
                                 <a class="dropdown-item" href="#">Perfil de Ingreso/Egreso</a>
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Guías</a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Trámites de Servicio Social</a>
+                                <a class="dropdown-item" href="#">Proceso para realizar Prácticas Profesionales</a>
+                                <a class="dropdown-item" href="#">Autorización de UEAs Optativas o Exámenes de Recuperación</a>
+                                <a class="dropdown-item" href="#">Lineamientos de Movilidad</a>
+                                <a class="dropdown-item" href="#">Solicitud de Evaluación Especial</a>
+                                <a class="dropdown-item" href="#">Solicitud de Evaluación en Quinta Oportunidad</a>
+                            </ul>
+                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Contactos
