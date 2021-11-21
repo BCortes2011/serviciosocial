@@ -58,7 +58,7 @@
                             </li>
                             
                             <li>
-                                <a class="dropdown-item" href="#">Perfil de Ingreso/Egreso</a>
+                                <a class="dropdown-item" href="#">Perfil de Ingreso/Egreso ewras</a>
                             </li>
                         </ul>
                     </li>
