@@ -71,7 +71,9 @@ body {
 .banner-superior{
     background-image: url("../imgs/banners/banner-logo-ingbio.png");
     height: 250px;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 .error-message{
     color: rgb(236, 42, 42);
